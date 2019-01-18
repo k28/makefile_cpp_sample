@@ -23,8 +23,9 @@ OBJECTS	= $(addprefix $(OBJROOT)/, $(OBJSRCS:.cc=.o))
 
 DEPENDS	= $(OBJECTS:.o=.d)
 
-$(warning SOURCES = $(SOURCES))
-$(warning OBJECTS = $(OBJECTS))
+# for debug
+#$(warning SOURCES = $(SOURCES))
+#$(warning OBJECTS = $(OBJECTS))
 
 $(TARGET): $(OBJECTS)
 	$(CXX) -o $@ $^ $(LIBS)
