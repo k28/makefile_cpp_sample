@@ -3,7 +3,7 @@
 #
 
 CXX		= g++
-CFLAGS	= -g -Wall -Werror
+CFLAGS	= -g -Wall -Werror -MMD -MP
 INCS	= 
 LIBS	= -lPocoFoundation
 TARGET	= MakefileSample
